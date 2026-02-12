@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <title>Personal Online CV</title>
     <style>
@@ -20,17 +21,18 @@
 <body>
     <header>
         <h1>Scott Nels Quinaud</h1>
-        <p>IT Student | Web Systems and Technologies</p>
+        <p class="subtitle">IT Student | Web Systems and Technologies</p>
     </header>
-    <main>
-        <section>
+    <main> 
+        <div class="container">
+        <section class="card">
             <h2>About Me</h2>
             <img src="images/profile.jpg" alt="Profile photo">
             <p>Hello! My name is Scott Nels Quinaud, and I am a second-year BSIT (Bachelor of Science in Information Technology) student. I chose this course because I am interested in technology and how it helps make tasks easier and more efficient. I enjoy learning about programming, computer systems, and creating projects that improve my skills and creativity.</p>
             <p>Email: <a href="mailto:quinaud.scottnels@gmail.com">quinaud.scottnels@gmail.com</a><br>
             GitHub: <a href="https://github.com/Scott1273" target="_blank">https://github.com/Scott1273</a></p>
         </section>
-        <section>
+        <section class="card">
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
@@ -52,7 +54,7 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="card">
             <h2>Education</h2>
             <table>
                 <tr>
@@ -82,7 +84,7 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section class="card">
             <h2>Projects</h2>
             <table>
                 <tr>
@@ -102,7 +104,7 @@
                 </tr>
             </table>
         </section>
-        <section>
+        <section class="card">
             <h2>Contact Me</h2>
             <form>
                 <input type="text" placeholder="Name"><br><br>
@@ -111,7 +113,8 @@
                 <button type="submit">Send</button>
             </form>
         </section>
-    </main>
+    </div>
+    </main> 
     <footer>
         <p>&copy; 2026 Scott Nels Quinaud. All rights reserved.</p>
     </footer>
