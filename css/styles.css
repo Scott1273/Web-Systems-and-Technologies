@@ -135,19 +135,22 @@ h1 {
     color: white;
   }
   
-  .dark-mode h1,
-  .dark-mode h2,
-  .dark-mode p,
-  .dark-mode li,
-  .dark-mode a {
-    color: white;
-  }
-  
   .dark-mode header {
     background-color: #111;
     color: white;
   }
+  
+  .dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode li {
+  color: white;
+}
 
+.dark-mode a {
+  color: #66b3ff;
+}
+  
   .hidden {
     display: none;
   }
