@@ -5,6 +5,15 @@
     padding: 0;
   }
   
+  .card p {
+    text-align: justify;
+  }
+  
+  
+  .about-text {
+    text-align: justify;
+  }
+  
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -99,10 +108,46 @@ h1 {
     background-color: #005fa3;
   }
 
+  footer p {
+    text-align: center;
+  }
+  
   footer {
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    color: #666;
     font-size: 14px;
+    color: #666;
+  }
+
+  footer p {
+    text-align: center;
+  }
+  
+
+  .dark-mode {
+    background-color: #222;
+    color: white;
+  }
+  
+  .dark-mode .card {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode p,
+  .dark-mode li,
+  .dark-mode a {
+    color: white;
+  }
+  
+  .dark-mode header {
+    background-color: #111;
+    color: white;
+  }
+
+  .hidden {
+    display: none;
   }
