@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Skills() {
+function Skills({ skills }) {
   const [visible, setVisible] = useState(true);
 
   return (
@@ -12,23 +12,27 @@ function Skills() {
         <section className="card" id="skillsSection">
           <h2>Skills</h2>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <ul>
-            <li>Web Development
-              <ul>
-                <li>Frontend
+            {skills.map((skill, index) => (
+              <li key={index}>
+                {skill.name}
+                {skill.subcategories && (
                   <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    {skill.subcategories.map((sub, subIndex) => (
+                      <li key={subIndex}>
+                        {sub.name}
+                        {sub.items && (
+                          <ul>
+                            {sub.items.map((item, itemIndex) => (
+                              <li key={itemIndex}>{item}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </li>
+                    ))}
                   </ul>
-                </li>
-                <li>Backend</li>
-              </ul>
-            </li>
+                )}
+              </li>
+            ))}
           </ul>
         </section>
       )}
