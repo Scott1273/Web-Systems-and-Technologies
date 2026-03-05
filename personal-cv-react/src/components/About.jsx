@@ -1,9 +1,10 @@
+import profilePhoto from "../assets/images/profile.jpg";
 
 function About() {
   return (
     <section className="card">
       <h2>About Me</h2>
-      <img src='src/assets/images/profile.jpg' alt="Profile photo" />
+      <img src={profilePhoto} alt="Profile photo" />
       <p>
         Hello! My name is Scott Nels Quinaud, and I am a second-year BSIT
         (Bachelor of Science in Information Technology) student. I chose this
